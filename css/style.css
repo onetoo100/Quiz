@@ -1,0 +1,117 @@
+:root {
+    --space: 5rem;
+    --mainFont: 'Covered By Your Grace', cursive;
+    --secondFont: 'Fredoka', sans-serif;
+    --thirdFont: 'Stalinist One', cursive;
+    --fourthFont: 'Yanone Kaffeesatz', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--mainFont);
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+    font-family: var(--secondFont);
+    margin: calc(var(--space) / 2) 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.container {
+    max-width: 80rem;
+    width: 80%;
+    margin: 10rem auto;
+    background-color: #dadbdf;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 80rem;
+        margin: 5rem auto;
+    }
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.board {
+    display: flex;
+    font-family: var(--thirdFont);
+    flex-direction: column;
+    align-items: center;
+}
+
+.questions {
+    text-transform: uppercase;
+    padding: 1rem;
+    font-size: .8rem;
+}
+
+@media (min-width: 768px) {
+    .questions {
+        font-size: 1.5rem;
+    }
+}
+
+.choices {
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+}
+
+.btn {
+    background-color: #002db3;
+    color: white;
+    width: 20rem;
+    font-size: 1.5rem;
+    border-radius: .3rem;
+    padding: .8rem;
+    outline: 0;
+    font-family: var(--secondFont);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: #809fff;
+}
+
+.progress {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-family: var(--fourthFont);
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counter {
+    font-family: var(--mainFont);
+    font-size: 3rem;
+}
+
+.timegauge {
+    background-color: green;
+    height: 5px;
+    width: 150px;
+}
